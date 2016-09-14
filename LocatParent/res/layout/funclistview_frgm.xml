@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+
+    <!-- 下拉刷新  只能有一个子组件 ,因为进度条会挡住背景的边框所以下移-->
+    <android.support.v4.widget.SwipeRefreshLayout
+		android:layout_marginTop="2dp"
+        android:id="@+id/srl_client"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="#f6f5ec"
+       >
+		
+        <!-- 因为备注会挡住背景的边框所以下移-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:id="@+id/rl_content"
+            >
+            <LinearLayout
+                android:id="@+id/ll_action"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" 
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_positive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center" 
+                    android:background="@drawable/rectwhite_seletor">
+
+                    <ImageView
+                        android:id="@+id/iv_positive"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/add_seletor" />
+
+                    <TextView
+                        android:id="@+id/tv_positive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_positive"
+                        android:text="添加"
+                         android:textColor="#000000"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_negative"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center" 
+                    android:background="@drawable/rectwhite_seletor">
+
+                    <ImageView
+                        android:id="@+id/iv_negative"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/delete_seletor" />
+
+                    <TextView
+                        android:id="@+id/tv_negative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_negative"
+                        android:textColor="#000000"
+                        android:text="删除"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 按钮横分割线 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@id/ll_action"
+                android:background="#d9d6c3" />
+            <!-- 按钮竖分割线 -->
+			
+			<TextView 
+		    android:id="@+id/tv_desc"
+		    android:text="当前无信息，请尝试刷新"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:gravity="center"
+		    />
+			<!-- 因为右边的拉条会挡住背景，所以左移 -->
+            <ListView
+                android:id="@+id/fl_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_desc"
+                android:layout_above="@id/ll_action"
+                >
+            </ListView>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

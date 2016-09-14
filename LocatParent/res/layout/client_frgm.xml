@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5ec"
+    android:clickable="true" >
+
+	<RelativeLayout
+	    android:id="@+id/rl_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/rl_childs"
+	    android:layout_alignRight="@+id/rl_childs"
+	    android:layout_marginTop="10dp"
+	    android:padding="10dp"
+	    android:background="@drawable/rect_shape">
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circrect_shape"
+            android:padding="4dp"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:id="@+id/ll_desc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_item"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:padding="1dp" >
+
+            <TextView
+                android:id="@+id/tv_maindesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="用户名"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_vicedesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="欢迎使用监护端~"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+	<RelativeLayout 
+	     android:id="@+id/rl_childs"
+	    android:layout_below="@id/rl_title"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rect_shape"
+        android:layout_margin="5dp"
+	    >
+    <FrameLayout
+        android:id="@+id/fl_childs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        >
+    </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

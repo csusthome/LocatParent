@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+	<ImageView
+	    android:id="@+id/iv_child_list"
+	    android:layout_width="38dp"
+	    android:layout_height="38dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true"
+	    android:src="@drawable/child_list_seletor"
+	    android:layout_margin="5dp"
+	    />
+	<ImageView
+	    android:id="@+id/iv_fance_list"
+	    android:layout_width="38dp"
+	    android:layout_height="38dp"
+	    android:layout_below="@id/iv_child_list"
+	    android:layout_alignParentRight="true"
+	    android:src="@drawable/fance_list_seletor" 
+	    android:layout_margin="5dp"
+	    />
+	<ImageView
+	    android:id="@+id/iv_navigate"
+	    android:layout_width="38dp"
+	    android:layout_height="38dp"
+	    android:layout_below="@id/iv_fance_list"
+		android:layout_alignParentRight="true"
+	    android:src="@drawable/navigation_seletor" 
+	    android:layout_margin="5dp"
+	    />
+	
+	<ImageView
+	    android:id="@+id/iv_operation"
+	    android:layout_width="38dp"
+	    android:layout_height="38dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:src="@drawable/opeation_seletor" 
+	    android:layout_margin="5dp"
+	    />
+	
+	
+		
+</RelativeLayout>

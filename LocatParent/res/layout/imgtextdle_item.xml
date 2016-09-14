@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp" 
+    android:background="@drawable/rectwhite_seletor"
+    >
+
+    <ImageView
+        android:id="@+id/iv_item"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_launcher" />
+    
+    <CheckBox 
+	    android:layout_margin="4dp"
+	    android:id="@+id/cb_func"
+	    android:layout_alignParentRight="true"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:scaleType="centerCrop"
+	    />
+    
+    <ImageView
+        android:id="@+id/iv_visible"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/cb_func"
+        android:src="@drawable/visible" />
+    
+    <LinearLayout
+        android:id="@+id/ll_desc"
+        android:padding="1dp"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:orientation="vertical"
+	    android:layout_toRightOf="@id/iv_item"
+	    android:layout_toLeftOf="@id/iv_visible"
+        >
+        <TextView 
+            android:id="@+id/tv_maindesc"
+            android:layout_width="match_parent"
+	    	android:layout_height="match_parent" 
+	    	android:text="主描述"
+	    	android:textSize="18dp"
+	    	android:layout_weight="2"
+	    	android:textColor="#000000"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_vicedesc"
+            android:layout_width="match_parent"
+	    	android:layout_height="match_parent" 
+	    	android:text="副描述"
+	    	android:textSize="12dp"
+	    	android:layout_weight="3"
+            android:textColor="#000000"
+            />
+        
+    </LinearLayout>
+    
+	
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:background="@drawable/circrect_shape"
+    android:padding="2dp">
+    <TextView 
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:ems="1"
+        android:background="@drawable/rectwhite_seletor"
+        android:textSize="20sp"
+        />
+    <!-- 分割线 -->
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#cccccc"
+	    />
+    <TextView 
+        android:id="@+id/tv_extend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扩大"
+        android:ems="1"
+        android:textSize="20sp"
+        android:background="@drawable/rectwhite_seletor"
+        />
+    <!-- 分割线 -->
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#cccccc"
+	    />
+    <TextView 
+        android:id="@+id/tv_shrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="缩小"
+        android:ems="1"
+        android:textSize="20sp"
+        android:background="@drawable/rectwhite_seletor"
+        />
+     <!-- 分割线 -->
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#cccccc"
+	    />
+    <TextView 
+        android:id="@+id/tv_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:ems="1"
+        android:textSize="20sp"
+        android:background="@drawable/rectwhite_seletor"
+        />
+</LinearLayout>

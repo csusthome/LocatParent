@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5ec" >
+	
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp">
+        
+    <EditText
+        android:id="@+id/et_desc"
+        android:hint="备注名"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        />
+
+    <EditText
+        android:id="@+id/et_radius"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/et_desc"
+        android:hint="初始半径"
+        android:inputType="number" />
+    
+    <Button 
+        android:id="@+id/but_add"
+        android:layout_below="@id/et_radius"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="确认"
+        android:textColor="#ffffff"
+        android:enabled="false"
+        android:background="@drawable/greenbut_seletor"/>
+    	
+    </RelativeLayout>
+    
+</RelativeLayout>

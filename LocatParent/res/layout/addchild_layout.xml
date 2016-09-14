@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5ec" >
+	
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp">
+    <EditText
+        android:id="@+id/et_desc"
+        android:hint="子端备注名"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        />
+    <EditText
+        android:id="@+id/et_imei"
+        android:hint="子端IMEI码"
+        android:layout_below="@id/et_desc"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        />
+    
+    <EditText
+        android:id="@+id/et_checkcode"
+        android:hint="验证码"
+        android:layout_below="@id/et_imei"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        />
+    
+    <Button 
+        android:id="@+id/but_add"
+        android:layout_below="@id/et_checkcode"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="添加子端"
+        android:textColor="#ffffff"
+        android:enabled="false"
+        android:background="@drawable/greenbut_seletor"/>
+    	
+    </RelativeLayout>
+    
+</RelativeLayout>

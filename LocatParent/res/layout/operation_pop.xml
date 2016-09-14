@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/popbg"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/rl_positive"
+        android:clickable="true"
+        android:background="#ffffff"
+        >
+	<ImageView
+	    android:id="@+id/iv_positive"
+	    android:layout_width="25dp"
+	    android:layout_height="25dp"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/real_trace"
+	     />
+	<TextView 
+	    android:layout_marginLeft="5dp"
+	    android:layout_toRightOf="@id/iv_positive"
+	    android:id="@+id/tv_positive"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="12sp"
+	    android:layout_centerVertical="true"
+	    android:text="实时轨迹"
+	    />
+    </RelativeLayout>
+    <!-- 分割线 -->
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/dividline_shape"
+	    />
+    
+    <RelativeLayout 
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/rl_history"
+        android:background="#ffffff"
+        >
+	<ImageView
+	    android:id="@+id/iv_history"
+	    android:layout_width="25dp"
+	    android:layout_height="25dp"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/history_trace" />
+	<TextView 
+	    android:layout_marginLeft="5dp"
+	    android:layout_toRightOf="@id/iv_history"
+	    android:id="@+id/tv_func1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="12sp"
+	    android:layout_centerVertical="true"
+	    android:text="历史轨迹"
+	    />
+    </RelativeLayout>
+    <!-- 分割线 -->
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/dividline_shape"
+	    />
+    
+    <RelativeLayout 
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/rl_fance"
+        android:background="#ffffff"
+        >
+	<ImageView
+	    android:id="@+id/iv_fance"
+	    android:layout_width="25dp"
+	    android:layout_height="25dp"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/fance" />
+	<TextView 
+	    android:layout_marginLeft="5dp"
+	    android:layout_toRightOf="@id/iv_fance"
+	    android:id="@+id/tv_fance"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="12sp"
+	    android:layout_centerVertical="true"
+	    android:text="围栏"
+	    />
+    </RelativeLayout>
+    <!-- 分割线 -->
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/dividline_shape"
+	    />
+</LinearLayout>

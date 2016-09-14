@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5ec"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <!-- 账户管理头布局 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/rect_shape"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_item"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circrect_shape"
+                android:padding="4dp"
+                android:src="@drawable/child" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/delete_seletor" />
+
+            <LinearLayout
+                android:id="@+id/ll_desc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@id/iv_delete"
+                android:layout_toRightOf="@id/iv_item"
+                android:orientation="vertical"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/tv_maindesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="子端名"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_vicedesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:text="IMEI码"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </RelativeLayout>
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_title"
+            android:layout_margin="3dp"
+            android:background="@drawable/rect_shape"
+            >
+		    <FrameLayout
+            android:id="@+id/fl_tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            >
+        </FrameLayout>
+		</RelativeLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

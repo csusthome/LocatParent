@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="refresh_1">#000000</drawable>
+    <drawable name="refresh_2">#333333</drawable>
+    <drawable name="refresh_3">#999999</drawable>
+    <drawable name="refresh_4">#cccccc</drawable>
+
+
+</resources>

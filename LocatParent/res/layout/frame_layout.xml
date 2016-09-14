@@ -1,0 +1,22 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectshadow_shape"
+    >
+    <RelativeLayout 
+       android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@drawable/rectshadow_shape"
+        >
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:id="@+id/fl_frgm"
+        >
+ 	</FrameLayout>
+ 	</RelativeLayout>
+ 	
+</RelativeLayout>

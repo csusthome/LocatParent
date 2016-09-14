@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afdfe4" >
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="新用户" />
+
+    
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" >
+
+        <ImageView
+        android:id="@+id/img_avter"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circrect_shape"
+        android:src="@drawable/avatar" />
+        
+        <EditText
+            android:id="@+id/et_acount"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/img_avter"
+            android:background="@drawable/rectshadow_shape"
+            android:ems="10"
+            android:hint="请输入手机号"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/et_acount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectshadow_shape"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/but_login"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@id/et_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bulebut_seletor"
+            android:enabled="false"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

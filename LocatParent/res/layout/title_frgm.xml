@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:background="#33a3dc">
+    
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="监控端"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+	
+    <ImageButton
+        android:id="@+id/but_setting"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:alpha="100"
+        android:background="#33a3dc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/setting_selector" 
+        />
+
+    <ImageButton
+        android:id="@+id/ibut_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="#33a3dc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_seletor" />
+	
+</RelativeLayout>

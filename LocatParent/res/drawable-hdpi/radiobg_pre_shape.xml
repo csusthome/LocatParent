@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<!-- 背景边框 圆角部分-->
+    <item>
+        <shape android:shape="rectangle" 
+            >
+            <solid android:color="#999d9c"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <!-- 主题圆角部分 -->
+    <item android:top="1dp" android:left="1dp" android:right="1dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="#f6f5ec" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    
+    <!-- 主题平角部分 -->
+    <item android:top="9dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="#f6f5ec" />
+            <stroke android:color="#999d9c" android:width="1dp"/>
+        </shape>
+    </item>
+    <!-- 主题中间部分 -->
+    <item android:top="9dp" android:left="1dp" android:right="1dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="#f6f5ec" />
+            
+        </shape>
+    </item>
+</layer-list>

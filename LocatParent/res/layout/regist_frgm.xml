@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afdfe4"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_avter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+             android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circrect_shape"
+            android:src="@drawable/avatar" />
+        
+    <EditText
+        android:id="@+id/et_acount"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_avter"
+        android:background="@drawable/rectshadow_shape"
+        android:ems="10"
+        android:maxLines="1"
+        android:maxLength="11"
+        android:inputType="phone"
+        android:hint="请输入手机号" />
+    
+    <EditText
+        android:id="@+id/et_desc"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_acount"
+        android:background="@drawable/rectshadow_shape"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:ems="10"
+        android:hint="请输入昵称(最长10位)" />
+        
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/et_desc"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectshadow_shape"
+        android:hint="请输入密码（最长11位）"
+        android:maxLines="1"
+        android:maxLength="11"
+        android:inputType="textPassword" />
+
+
+    
+    <EditText
+        android:id="@+id/et_confirmpw"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectshadow_shape"
+        android:ems="10"
+        android:hint="请再次输入密码" 
+        android:maxLines="1"
+        android:maxLength="11"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/but_register"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/et_confirmpw"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/greenbut_seletor"
+        android:text="注册"
+        android:enabled="false"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+    
+    </RelativeLayout>
+
+
+</RelativeLayout>

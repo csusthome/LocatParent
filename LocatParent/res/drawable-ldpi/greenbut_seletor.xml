@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 需要指明enable的情况为false时的按下状态，否则最后的不可用状态会无效 -->
+    <item android:state_pressed="true" android:state_enabled="true">
+          <shape >
+            <corners android:radius="10dp"/>
+            <solid android:color="#339933"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false" android:state_enabled="true">
+        <shape >
+            <corners android:radius="10dp"/>
+            <solid android:color="#99CC33"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" >
+        <shape >
+            <corners android:radius="10dp"/>
+            <solid android:color="#cccccc"/>
+        </shape>
+    </item>
+</selector>

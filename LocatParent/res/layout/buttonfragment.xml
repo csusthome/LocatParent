@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   		<RadioGroup
+   		    android:id="@+id/rg_group"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="28dp"
+   		    android:layout_gravity="center"
+   		    android:orientation="horizontal" >
+ 
+        	<RadioButton 
+        	    android:id="@+id/roundnamelist"
+        	    android:layout_width="0dp"
+        	    android:layout_height="match_parent"
+        	    android:layout_weight="1"
+        	    android:text="围栏名单"
+        	    android:gravity="center"
+        	    android:button="@null"
+        	    android:state_checked="true"
+        	    android:background="@drawable/radio_seletor"
+        	    android:checked="true"/> 
+        	    
+        	<RadioButton 
+        	    android:id="@+id/whitenamelist"
+        	    android:layout_width="0dp"
+        	    android:layout_height="match_parent"
+        	    android:layout_weight="1"
+        	    android:text="白名单列表"
+        	    android:gravity="center"
+        	    android:button="@null"
+        	    android:background="@drawable/radio_seletor"/> 
+        	    
+        	<RadioButton 
+        	    android:id="@+id/historywarn"
+        	    android:layout_width="0dp"
+        	    android:layout_height="match_parent"
+        	    android:layout_weight="1"
+        	    android:text="本日预警"
+        	    android:gravity="center"
+        	    android:button="@null"
+        	    android:background="@drawable/radio_seletor"/> 
+        	    
+        </RadioGroup>
+        
+       <android.support.v4.view.ViewPager
+	       android:id="@+id/vp_list"
+	       android:layout_below="@id/rg_group"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+       >
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

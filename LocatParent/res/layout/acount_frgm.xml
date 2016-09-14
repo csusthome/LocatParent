@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5ec" >
+
+    <!-- 账户管理头布局 -->
+
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/white_listbg" >
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+			android:layout_marginLeft="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/circrect_shape"
+            android:padding="4dp"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:id="@+id/ll_desc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_item"
+            android:orientation="vertical"
+            android:padding="1dp" >
+
+            <TextView
+                android:id="@+id/tv_maindesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="用户名"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_vicedesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="欢迎使用监护端~"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_notify"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/whitelist_bg_seletor"
+        android:layout_below="@id/rl_title"
+        android:orientation="horizontal"
+        >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:src="@drawable/notify" />
+        
+        <TextView 
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="通知推送"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_acount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="-1sp"
+        android:background="@drawable/whitelist_bg_seletor"
+        android:layout_below="@id/ll_notify"
+        android:orientation="horizontal"
+        >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:src="@drawable/acount" />
+        
+        <TextView 
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="账户管理"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_exit"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/whitelist_bg_seletor"
+        android:layout_below="@id/ll_acount"
+        android:orientation="horizontal"
+        >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:src="@drawable/exit" />
+        
+        <TextView 
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="退出账户"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

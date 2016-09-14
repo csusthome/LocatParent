@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#ffffff" >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:id="@+id/ll_map"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ibut_map"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_pre" />
+
+            <TextView
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="地图监控"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:id="@+id/ll_client"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ibut_client"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kid" />
+
+            <TextView
+                android:id="@+id/tv_client"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="子端管理"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:id="@+id/ll_acount"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ibut_acount"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/tv_acount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="父端管理"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
